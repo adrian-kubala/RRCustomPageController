@@ -10,8 +10,8 @@
 
 @interface RRPageController : UIViewController
 
-@property (nonatomic, strong) UIImage *imagePage;
-@property (nonatomic, strong) NSString *titlePage;
+@property (nonatomic, strong) UIImage *pageImage;
+@property (nonatomic, strong) NSString *pageTitle;
 
 - (instancetype) initWithTitle:(NSString *)title;
 - (instancetype) initWithImage:(UIImage *)image;

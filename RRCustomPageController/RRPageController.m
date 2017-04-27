@@ -16,14 +16,14 @@
 
 - (instancetype) initWithTitle:(NSString *)title {
     if (self = [super init]) {
-        _titlePage = title;
+        _pageTitle = title;
     }
     return (self);
 }
 
 - (instancetype) initWithImage:(UIImage *)image {
     if (self = [super init]) {
-        _imagePage = image;
+        _pageImage = image;
     }
     return (self);
 }

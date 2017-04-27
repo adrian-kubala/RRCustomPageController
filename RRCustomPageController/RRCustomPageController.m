@@ -62,20 +62,20 @@
     childView.exclusiveTouch = NO;
     childView.opaque = NO;
     
-    if (currentPage.titlePage != nil) {
+    if (currentPage.pageTitle != nil) {
       UILabel *titleCurrentPage = [[UILabel alloc] initWithFrame:
                                    CGRectMake(0, 20 - (17 / 2), [UIScreen mainScreen].bounds.size.width, 20)];
       titleCurrentPage.textAlignment = NSTextAlignmentCenter;
-      titleCurrentPage.text = currentPage.titlePage;
+      titleCurrentPage.text = currentPage.pageTitle;
       titleCurrentPage.textColor = COLOR_LABEL;
       [childView addSubview:titleCurrentPage];
     }
-    else if (currentPage.imagePage != nil) {
-      UIImageView *currentImagePage = [[UIImageView alloc] initWithImage:currentPage.imagePage];
-      currentImagePage.frame = CGRectMake([UIScreen mainScreen].bounds.size.width / 2 - currentPage.imagePage.size.width / 2,
-                                          20 - currentPage.imagePage.size.height / 2, currentPage.imagePage.size.width,
-                                          currentPage.imagePage.size.height);
-      [childView addSubview:currentImagePage];
+    else if (currentPage.pageImage != nil) {
+      UIImageView *currentpageImage = [[UIImageView alloc] initWithImage:currentPage.pageImage];
+      currentpageImage.frame = CGRectMake([UIScreen mainScreen].bounds.size.width / 2 - currentPage.pageImage.size.width / 2,
+                                          20 - currentPage.pageImage.size.height / 2, currentPage.pageImage.size.width,
+                                          currentPage.pageImage.size.height);
+      [childView addSubview:currentpageImage];
     }
     [_menuBar addSubview:childView];
     index += 1;
