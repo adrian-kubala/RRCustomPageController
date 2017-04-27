@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UIScrollView *menuBar;
 @property (nonatomic, strong) UILabel *labelTypeTitle;
 
-- (instancetype) initWithControllers:(NSArray *)_controllers;
+- (instancetype)initWithControllers:(NSArray *)_controllers;
+- (void)setPageScrollBouncing:(BOOL)bouncing;
 
 @end
